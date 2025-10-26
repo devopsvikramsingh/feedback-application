@@ -31,7 +31,7 @@ class AppDatabase extends _$AppDatabase {
   Future<List<User>> getAllUsers() => select(users).get();
 }
 
-// Step 2c: Open connection (Web or Mobile)
+// Step 2: Open connection (Web or Mobile)
 LazyDatabase _openConnection() {
   return LazyDatabase(() async {
     if (kIsWeb) {
